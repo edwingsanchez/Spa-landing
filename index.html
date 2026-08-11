@@ -19,12 +19,24 @@
     }
 
     body{
-        font-family: 'Cormorant Garamond';
+        font-family: 'Montserrat';
     }
 
     section {
         width: 100%;
         height: 100vh;
+    }
+
+    h1{
+        font-family: 'Cormorant Garamond'; 
+        font-size: 48px; 
+        line-height: 56px; 
+        font-weight: 400; 
+        color: #221F19FF; 
+    }
+
+    h2, h3{
+        font-family: 'Cormorant Garamond';
     }
 
     header{
@@ -63,7 +75,7 @@
 
 
     #hero{
-        background: #657455FF; 
+        background: #8B7855; 
         
         display: flex; 
         align-items: end;
@@ -109,7 +121,7 @@
         -webkit-backdrop-filter: blur(4px); 
     }
 
-    .section2-card{
+    .rating-card{
         width: 352px;
         height: 316px;
         background: #EBE9E5FF;
@@ -122,6 +134,19 @@
 
         line-height: 25px;
     }
+
+    .rating-card img{
+        width: 96px;
+    }
+
+    .rating-card-parrafo{
+        font-size: 16px; 
+        line-height: 28px; 
+        font-weight: 400; 
+        color: #221F19FF;
+        font-style: italic; 
+    }
+
 
 
     .razon-card{
@@ -197,13 +222,13 @@
     <section id="hero">
         <div id="hero-container">
             <div style="display: flex; flex-direction: column; gap: 16px;">
-                <p style="font-size: 14px; font-weight: 600; color: #657455FF;">Bienvenidos a la Serenidad</p>
+                <p style="font-size: 14px; font-weight: 600; color: #657455FF;">BIENVENIDO A LA SERENIDAD</p>
                 <p id="hero-title">Reencuéntrate con tu esencia en un santuario de paz absoluta</p>
             </div>
 
             <div style="display: flex; flex-direction: column; gap: 32px;">
                 <div style="display: flex; flex-direction: row; gap: 23px">
-                    <a class="hero-button">Reservar Experiencia</a>
+                    <a class="hero-button" style="background: #657455FF; border-width: 0px">Reservar Experiencia</a>
                     <a class="hero-button">Explorar Servicios</a>
                 </div>
                 <p style="font-size: 12px; font-weight: 400; color: #FFFFFFFF;">TRATAMIENTOS ORGANICOS Y SOSTENIBILIDAD CONSCIENTE</p>
@@ -220,35 +245,35 @@
 
 
 
-    <section style="background: #F8F7F4FF; display: flex; flex-direction: column; gap: 65px; align-items: center; justify-content: center;">
-        <div style="width: 620px; display: flex; flex-direction: column; gap: 40px; align-items: center; text-align: center;">
-            <p>TESTIMONIOS</p>
+    <section style="height: 888px; background: #F8F7F4FF; display: flex; flex-direction: column; gap: 65px; align-items: center; justify-content: center;">
+        <div style="width: 746px; display: flex; flex-direction: column; gap: 16px; align-items: center; text-align: center;">
+            <p style="  font-size: 14px; font-weight: 600; color: #657455FF; ">TESTIMONIOS</p>
             <h1>Lo que dice quienes han encontrado su refugio con nosotros</h1>
         </div>
 
         <div style="display: flex; flex-direction: row; justify-content: center; gap: 32px;">
             
-            <div class="section2-card">
-                <p style="color: orange; font-size: 40px;">*****</p>
-                <p style="font-style: italic;">"Una experiencia transformadora. Desde que entras, el aroma y la atencion te transportan a otro mundo. El masaje de piedras calientes es indispensable."</p>
+            <div class="rating-card">
+                <img src="/visily-rating (1).png">
+                <p class="rating-card-parrafo">"Una experiencia transformadora. Desde que entras, el aroma y la atencion te transportan a otro mundo. El masaje de piedras calientes es indispensable."</p>
                 <div style="display: flex; flex-direction: row; gap: 8px; align-items: center;">
                     <img style="width: 36px; height: 36px; border-radius: 100%; background-color: silver;">
                     <p>lucia fernandez</p>
                 </div>
             </div>
 
-            <div class="section2-card">
-                <p style="color: orange; font-size: 40px;">*****</p>
-                <p style="font-style: italic;">"El lugar perfecto para desconectar del estres de la ciudad. El ambiente es de un lujo discreto y muy elegante. Altamente recomendado"</p>
+            <div class="rating-card">
+                <img src="/visily-rating (1).png">
+                <p class="rating-card-parrafo">"El lugar perfecto para desconectar del estres de la ciudad. El ambiente es de un lujo discreto y muy elegante. Altamente recomendado"</p>
                 <div style="display: flex; flex-direction: row; gap: 8px; align-items: center;">
                     <img style="width: 36px; height: 36px; border-radius: 100%; background-color: silver;">
                     <p>javier moreno</p>
                 </div>
             </div>
 
-            <div class="section2-card" style="display: flex; flex-direction: column;">
-                <p style="color: orange; font-size: 40px;">*****</p>
-                <p style="font-style: italic;">"Como profesional del dise;o, aprecio cada detalle del Aura Spa. La iluminacion y los materiales crean una atmosfera de bienestar inigualable"</p>
+            <div class="rating-card" style="display: flex; flex-direction: column;">
+                <img src="/visily-rating (1).png">
+                <p class="rating-card-parrafo">"Como profesional del dise;o, aprecio cada detalle del Aura Spa. La iluminacion y los materiales crean una atmosfera de bienestar inigualable"</p>
                 <div style="display: flex; flex-direction: row; gap: 8px; align-items: center;">
                     <img style="width: 36px; height: 36px; border-radius: 100%; background-color: silver;">
                     <p>elena castro</p>
@@ -259,6 +284,11 @@
         <a>Leer mas rese;as -></a>
     </section>
     <hr>
+
+
+
+
+
 
     <section style="background: #DEDCD633; display: flex; flex-direction: row; gap: 77px; justify-content: center; align-items: center;">
         <div style="width: 523px; display: flex; flex-direction: column; gap: 66px;">
@@ -280,6 +310,10 @@
         <img style="width: 520px; height: 560px; border: solid 1px black;">
     </section>
     <hr>
+
+
+
+    
 
     <section style="display: flex; flex-direction: row; gap: 60px; justify-content: center; align-items: center;">
         <img style="width: 550px; height: 410px; border: solid 1px black; border-radius: 45px;">
@@ -440,7 +474,59 @@
 
     
 
-    <section style="background: #F8F7F4FF; "></section>
+    <section style="height: 1098px; width: 100%; background: #F8F7F4FF; display: flex; justify-content: center; align-items: center">
+        <div style="width: 1120px; height: 841px; background: #EBE9E5FF;  border-radius: 64px; box-shadow: 0px 25px 50px #00000040, 0px 0px 0px #171a1f00; display: flex; flex-direction: row; justify-content: center; align-items: center;">
+           
+
+
+
+            <div style="width: 560px; height: 840px; padding: 80px;    display: flex; flex-direction: column; gap: 96px; justify-content: center;">
+                <div style="width: 343px;  display: flex; flex-direction: column; gap: 16px;">
+                    <p>TU OCASION ESPECIAL</p>
+                    <h1 style="font-size: 48px; line-height: 56px; font-weight: 400;">¿Listo para vivir la experiencia Aura Spa</h1>
+                </div>
+                <div style="width: 448px;   display: flex; flex-direction: column; gap: 32px;">
+                    <p>Unete a nuestra comunidad selecta y comienza a recibir beneficios exclusivos desde primera visita. Tu santuario personal de te espera.</p>
+                    <div style="display: flex; flex-direction: row; gap: 10px;">
+                        <a class="hero-button" style="background-color: green;">Reservar Ahora</a>
+                        <a class="hero-button" style="color: green; border: solid 1px green;">ver Menu de Servicios</a>
+                    </div>
+                    <hr>
+                    <div style="display: flex; flex-direction: row; gap: 26px; align-items: center;">
+                        <div>
+                            <img style="width: 40px; height: 40px; border-radius: 100%; background: #BDB3A2;">
+                            <img style="width: 40px; height: 40px; border-radius: 100%; background: #BDB3A2;">
+                            <img style="width: 40px; height: 40px; border-radius: 100%; background: #BDB3A2;">
+                        </div>
+
+                        <p style="width: 225px;"><span style="font-weight: bold;">Mas de 500</span> personas reservaron este mes</p>
+                    </div>
+                </div>
+            </div>
+            
+            <img style="width: 560px; height: 840px; background: #BDB3A2; border-radius: 64px;">
+
+
+
+
+        </div>
+
+    </section>
+    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <footer style="width: 100%; height: 376px; background: #DEDCD6FF; "></footer>
 </body>
