@@ -3,9 +3,323 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aura SPA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+
+        text-decoration: none;
+    }
+
+    body{
+        font-family: 'Cormorant Garamond';
+    }
+
+    section {
+        width: 100%;
+        height: 100vh;
+    }
+
+    header{
+        height: 81px; 
+        padding: 21px 104px;
+        background: #F8F7F499; 
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        font-family: 'Montserrat', sans-serif;
+    }
     
+
+    #header-button{
+        width: 150px; 
+        height: 40px; 
+        padding: 0 12px; 
+        
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        
+        font-family: Montserrat; 
+        font-size: 14px; 
+        line-height: 22px; 
+        font-weight: 500; 
+        color: #F8F7F4FF; 
+        background: #657455FF; 
+        
+        border-radius: 4px;
+    }
+
+
+
+    #hero{
+        background: #657455FF; 
+        
+        display: flex; 
+        align-items: end;
+        padding: 97px 160px;
+    }
+
+    #hero-container{
+        display: flex; 
+        flex-direction: column; 
+        gap: 63px;
+    }
+
+    #hero-title{
+        width: 662px; 
+        font-family: 'Cormorant Garamond'; 
+        font-size: 48px; 
+        line-height: 56px; 
+        font-weight: 400; 
+        color: #221F19FF; 
+    }
+
+    .hero-button{
+        width: 224px; 
+        height: 56px; 
+        padding: 0 12px; 
+
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+
+        font-family: Montserrat; 
+        font-size: 16px;
+        font-weight: 500; 
+        color: #FFFFFFFF; /* white */
+        background: #00000000; /* transparent */
+        opacity: 1; 
+
+        border-radius: 9999px; 
+        border-width: 1px; 
+        border-color: #FFFFFFFF; /* white */
+        border-style: solid; 
+        backdrop-filter: blur(4px); 
+        -webkit-backdrop-filter: blur(4px); 
+    }
+
+    .section2-card{
+        width: 352px;
+        height: 316px;
+        background: #EBE9E5FF;
+        border-radius: 16px;
+        padding: 35px;
+
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+
+        line-height: 25px;
+    }
+
+
+    .razon-card{
+        height: 160px;
+        width: 265px;
+
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+
+        border: solid 1px black;
+    }
+
+    .razon-card img{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: beige;
+    }
+
+
+
+</style>
+<body>
+    <header>
+        <div style="display: flex; flex-direction: row; gap: 12px; align-items: center;">
+            <img style="width: 40px; height: 40px; border-radius: 100%;">
+            <h3 style="font-size: 24px; font-weight: 600; ">Aura Spa</h3>
+        </div>
+        <div style="display: flex; flex-direction: row; gap: 23px; align-items: center; font-size: 14px;">
+            <p style="font-size: 14px; font-weight: 500; color: #757067FF;">*  +34 900 123 456</p>
+            <a id="header-button">Reservar Cita</a>
+        </div>
+    </header>
+
+
+
+
+    <section id="hero">
+        <div id="hero-container">
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+                <p style="font-size: 14px; font-weight: 600; color: #657455FF;">Bienvenidos a la Serenidad</p>
+                <p id="hero-title">Reencuéntrate con tu esencia en un santuario de paz absoluta</p>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 32px;">
+                <div style="display: flex; flex-direction: row; gap: 23px">
+                    <a class="hero-button">Reservar Experiencia</a>
+                    <a class="hero-button">Explorar Servicios</a>
+                </div>
+                <p style="font-size: 12px; font-weight: 400; color: #FFFFFFFF;">TRATAMIENTOS ORGANICOS Y SOSTENIBILIDAD CONSCIENTE</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <section style="background: #F8F7F4FF; display: flex; flex-direction: column; gap: 65px; align-items: center; justify-content: center;">
+        <div style="width: 620px; display: flex; flex-direction: column; gap: 40px; align-items: center; text-align: center;">
+            <p>TESTIMONIOS</p>
+            <h1>Lo que dice quienes han encontrado su refugio con nosotros</h1>
+        </div>
+
+        <div style="display: flex; flex-direction: row; justify-content: center; gap: 32px;">
+            
+            <div class="section2-card">
+                <p style="color: orange; font-size: 40px;">*****</p>
+                <p style="font-style: italic;">"Una experiencia transformadora. Desde que entras, el aroma y la atencion te transportan a otro mundo. El masaje de piedras calientes es indispensable."</p>
+                <div style="display: flex; flex-direction: row; gap: 8px; align-items: center;">
+                    <img style="width: 36px; height: 36px; border-radius: 100%; background-color: silver;">
+                    <p>lucia fernandez</p>
+                </div>
+            </div>
+
+            <div class="section2-card">
+                <p style="color: orange; font-size: 40px;">*****</p>
+                <p style="font-style: italic;">"El lugar perfecto para desconectar del estres de la ciudad. El ambiente es de un lujo discreto y muy elegante. Altamente recomendado"</p>
+                <div style="display: flex; flex-direction: row; gap: 8px; align-items: center;">
+                    <img style="width: 36px; height: 36px; border-radius: 100%; background-color: silver;">
+                    <p>javier moreno</p>
+                </div>
+            </div>
+
+            <div class="section2-card" style="display: flex; flex-direction: column;">
+                <p style="color: orange; font-size: 40px;">*****</p>
+                <p style="font-style: italic;">"Como profesional del dise;o, aprecio cada detalle del Aura Spa. La iluminacion y los materiales crean una atmosfera de bienestar inigualable"</p>
+                <div style="display: flex; flex-direction: row; gap: 8px; align-items: center;">
+                    <img style="width: 36px; height: 36px; border-radius: 100%; background-color: silver;">
+                    <p>elena castro</p>
+                </div>
+            </div>
+        </div>
+
+        <a>Leer mas rese;as -></a>
+    </section>
+    <hr>
+
+    <section style="background: #DEDCD633; display: flex; flex-direction: row; gap: 77px; justify-content: center; align-items: center;">
+        <div style="width: 523px; display: flex; flex-direction: column; gap: 66px;">
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <p>Nuestro proposito</p>
+                <h1>Libérate del ruido exterior y reconecta con tu bienestar interior</h1>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 30px;">
+                <p>En un mundo que nunca se detiene. Aura Spa es tu pausa obligada. No somos solo un spa; somos un retiro diseñado para curar el agotamiento moderno mediante terapias milenarias y tecnología de vanguardia.</p>
+            
+                <p> * Reduccion profunda del estres cronico y ansiedad</p>
+                <p> * Mejora inmediata de la calidad del sueño</p>
+                <p> * Tratamientos personalizados segun tu biotipo</p>
+            
+                <a class="hero-button" style="background-color: green;">Comienza tu viaje hoy</a>
+            </div>
+
+        </div>
+        <img style="width: 520px; height: 560px; border: solid 1px black;">
+    </section>
+    <hr>
+
+    <section style="display: flex; flex-direction: row; gap: 60px; justify-content: center; align-items: center;">
+        <img style="width: 550px; height: 410px; border: solid 1px black; border-radius: 45px;">
+        <div style="display: flex; flex-direction: column; gap: 50px; width: 520px;">
+            <p>ARQUITECTURA DE PAZ</p>
+            <h1>Espacios diseñados para el silencio absoluto</h1>
+            <p>Nuestras salas de relajacion han sido creadas bajo principios de neuroaquitectura para inducir estados de calma profunda. Cada material, desde la piedra volcanica hasta la madera de roble, ha sido seleccionado por su capacidad de calmar los sentidos.</p>
+            <a class="hero-button" style="color: black; border: solid 1px black;">Ver instalaciones</a>
+        </div>
+    </section>
+    <hr>
+
+    <section style="display: flex; flex-direction: row; gap: 60px; justify-content: center; align-items: center;">
+        <div style="display: flex; flex-direction: column; gap: 50px; width: 520px;">
+            <p>COSMETICA DE VANGUARDIA</p>
+            <h1>Ciencia y naturaleza en perfecta armonia</h1>
+            <p>Utilizamos exclusivamente lineas de productos organicos con activos de alta concentracion. Nuestros tratamientos faciales combinan tecnicas manuales de masaje kobido con la tecnología mas avanzada en rejuvenecimiento</p>
+            <a class="hero-button" style="color: black; border: solid 1px black;">Nuestra seleccion</a>
+        </div>
+        <img style="width: 550px; height: 410px; border: solid 1px black; border-radius: 45px;">
+    </section>
+    <hr>
+
+    <section style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div style="display: flex; flex-direction: column; text-align: center; gap: 10px;">
+            <p>PORQUE NOSOTROS</p>
+            <h1>LA EXCELENCIA EN CADA DETALLA DE TU EXPERIENCIA</h1>
+        </div>
+
+        <div style="display: flex; flex-direction: row;">
+            <div class="razon-card">
+                <img>
+                <h3>Sostenibilidad</h3>
+                <p>Comprometidos con el medio ambiente, utilizamos productos libres de parabenos y envases 100% reciclables.</p>
+            </div>
+            <div class="razon-card">
+                <img>
+                <h3>Expertos Certificados</h3>
+                <p>Comprometidos con el medio ambiente, utilizamos productos libres de parabenos y envases 100% reciclables.</p>
+            </div>
+            <div class="razon-card">
+                <img>
+                <h3>Tiempo para Ti</h3>
+                <p>Programamos las citas con amplios margenes para asegurar que nunca te sientas apresurado.</p>
+            </div>
+        </div>
+
+
+        <div style="display: flex; flex-direction: row;">
+            <div class="razon-card">
+                <img>
+                <h3>Sostenibilidad</h3>
+                <p>Comprometidos con el medio ambiente, utilizamos productos libres de parabenos y envases 100% reciclables.</p>
+            </div>
+            <div class="razon-card">
+                <img>
+                <h3>Expertos Certificados</h3>
+                <p>Comprometidos con el medio ambiente, utilizamos productos libres de parabenos y envases 100% reciclables.</p>
+            </div>
+            <div class="razon-card">
+                <img>
+                <h3>Tiempo para Ti</h3>
+                <p>Programamos las citas con amplios margenes para asegurar que nunca te sientas apresurado.</p>
+            </div>
+        </div>
+
+    </section>
+    <hr>
+
+    <section style="background: #F8F7F4FF"></section>
+    <section style="background: #DEDCD61A; "></section>
+    <section style="background: #F8F7F4FF; "></section>
+    <section style="background: #F8F7F4FF; "></section>
+
+    <footer style="width: 100%; height: 376px; background: #DEDCD6FF; "></footer>
 </body>
 </html>
