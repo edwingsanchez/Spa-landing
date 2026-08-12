@@ -27,6 +27,21 @@
         height: 100vh;
     }
 
+    .section-parrafo{
+        font-family: Montserrat; 
+        font-size: 16px; 
+        line-height: 28px; 
+        font-weight: 400; 
+        color: #757067FF; 
+    }
+
+    .section-list{
+        font-size: 14px; 
+        line-height: 22px; 
+        font-weight: 400; 
+        color: #221F19FF; 
+    }
+
     h1{
         font-family: 'Cormorant Garamond'; 
         font-size: 48px; 
@@ -35,9 +50,42 @@
         color: #221F19FF; 
     }
 
+    .title-tag{
+        font-size: 14px; 
+        font-weight: 600; 
+        color: #657455FF;
+    }
+
     h2, h3{
         font-family: 'Cormorant Garamond';
     }
+
+    .green-button{
+            width: 250px; 
+            height: 56px; 
+            padding: 0 12px; 
+
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+
+            font-family: Montserrat; 
+            font-size: 16px; 
+            line-height: 26px; 
+            font-weight: 500; 
+            color: #F8F7F4FF; 
+            background: #657455FF; 
+            opacity: 1; 
+
+            border-radius: 9999px; 
+            border-width: 0px; 
+            border-color: #000000FF; /* black */
+            border-style: solid; 
+    }
+
+
+
+
 
     header{
         height: 81px; 
@@ -52,7 +100,6 @@
         font-family: 'Montserrat', sans-serif;
     }
     
-
     #header-button{
         width: 150px; 
         height: 40px; 
@@ -71,6 +118,9 @@
         
         border-radius: 4px;
     }
+
+
+
 
 
 
@@ -121,6 +171,9 @@
         -webkit-backdrop-filter: blur(4px); 
     }
 
+
+
+
     .rating-card{
         width: 352px;
         height: 316px;
@@ -149,16 +202,34 @@
 
 
 
+
+
     .razon-card{
-        height: 160px;
-        width: 265px;
+        height: auto;
+        width: 341px;
 
         display: flex; 
         flex-direction: column;
-        justify-content: space-between;
+        gap: 16px;
 
         border: solid 1px black;
+
+        font-size: 14px; 
+        line-height: 23px; 
+        font-weight: 400;
+        color: #757067FF; 
     }
+
+    .razon-card-title{
+        font-family: Cormorant Garamond; 
+        font-size: 20px; 
+        line-height: 28px; 
+        font-weight: 500; 
+        color: #221F19FF; 
+    }
+
+
+
 
     .razon-card img{
         width: 40px;
@@ -167,25 +238,40 @@
         background-color: beige;
     }
 
-    .paso-card{
 
+
+
+
+
+
+    .paso-card{
+        width: 341px;
     }
 
     .paso-card img{
-
+        width: 341px; 
+        height: 255px;
     }
 
-    .paso-card-num{
-
-    }
 
     .paso-card-nombre{
-
+        font-family: 'Cormorant Garamond'; 
+        font-size: 24px; 
+        line-height: 32px; 
+        font-weight: 400; 
+        color: #221F19FF; 
     }
 
     .paso-card-cont{
-
+        font-family: Montserrat; 
+        font-size: 14px; 
+        line-height: 22px; 
+        font-weight: 400; 
+        color: #757067FF; 
     }
+
+
+
 
 
     .query{
@@ -222,7 +308,7 @@
     <section id="hero">
         <div id="hero-container">
             <div style="display: flex; flex-direction: column; gap: 16px;">
-                <p style="font-size: 14px; font-weight: 600; color: #657455FF;">BIENVENIDO A LA SERENIDAD</p>
+                <p class="title-tag">BIENVENIDO A LA SERENIDAD</p>
                 <p id="hero-title">Reencuéntrate con tu esencia en un santuario de paz absoluta</p>
             </div>
 
@@ -247,7 +333,7 @@
 
     <section style="height: 888px; background: #F8F7F4FF; display: flex; flex-direction: column; gap: 65px; align-items: center; justify-content: center;">
         <div style="width: 746px; display: flex; flex-direction: column; gap: 16px; align-items: center; text-align: center;">
-            <p style="  font-size: 14px; font-weight: 600; color: #657455FF; ">TESTIMONIOS</p>
+            <p class="title-tag">TESTIMONIOS</p>
             <h1>Lo que dice quienes han encontrado su refugio con nosotros</h1>
         </div>
 
@@ -280,70 +366,131 @@
                 </div>
             </div>
         </div>
+        
 
-        <a>Leer mas rese;as -></a>
+        <a style="width: 180px; 
+                height: 40px; 
+                padding: 0 12px; 
+                display: flex; 
+                align-items: center; 
+                justify-content: center; 
+                font-family: Montserrat; 
+                font-size: 14px; 
+                line-height: 22px; 
+                font-weight: 500; 
+                color: #657455FF; 
+                background: #00000000; /* transparent */
+                opacity: 1; 
+                border: none; 
+                border-radius: 4px; 
+                gap: 8px;"
+            >Leer mas reseñas  
+            <img style="width: 16px; height: 16px; fill: #657455FF; " src="/lucide-ChevronRight-Outlined.svg">
+        </a>
     </section>
-    <hr>
 
 
 
 
 
 
-    <section style="background: #DEDCD633; display: flex; flex-direction: row; gap: 77px; justify-content: center; align-items: center;">
-        <div style="width: 523px; display: flex; flex-direction: column; gap: 66px;">
-            <div style="display: flex; flex-direction: column; gap: 10px;">
-                <p>Nuestro proposito</p>
+
+
+
+    <section style="height: 906px;  background: #DEDCD633; display: flex; flex-direction: row; gap: 77px; justify-content: center; align-items: center;">
+        <div style="width: 523px; display: flex; flex-direction: column; gap: 64px;">
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+                <p class="title-tag">NUESTRO PROPOSITO</p>
                 <h1>Libérate del ruido exterior y reconecta con tu bienestar interior</h1>
             </div>
-            <div style="display: flex; flex-direction: column; gap: 30px;">
-                <p>En un mundo que nunca se detiene. Aura Spa es tu pausa obligada. No somos solo un spa; somos un retiro diseñado para curar el agotamiento moderno mediante terapias milenarias y tecnología de vanguardia.</p>
+            <div style="display: flex; flex-direction: column; gap: 36px;">
+                <p class="section-parrafo">En un mundo que nunca se detiene. Aura Spa es tu pausa obligada. No somos solo un spa; somos un retiro diseñado para curar el agotamiento moderno mediante terapias milenarias y tecnología de vanguardia.</p>
+
+                <div style="display: flex; flex-direction: column; gap: 18px;">
+                    <p class="section-list">* Reduccion profunda del estres cronico y ansiedad</p>
+                    <p class="section-list">* Mejora inmediata de la calidad del sueño</p>
+                    <p class="section-list">* Tratamientos personalizados segun tu biotipo</p>
+                </div>
+
             
-                <p> * Reduccion profunda del estres cronico y ansiedad</p>
-                <p> * Mejora inmediata de la calidad del sueño</p>
-                <p> * Tratamientos personalizados segun tu biotipo</p>
-            
-                <a class="hero-button" style="background-color: green;">Comienza tu viaje hoy</a>
+                <a class="green-button">Comienza tu viaje hoy</a>
             </div>
 
         </div>
-        <img style="width: 520px; height: 560px; border: solid 1px black;">
+        <img style="width: 520px; height: 650px; background: #BDB3A2; border-radius: 64px;">
     </section>
     <hr>
 
 
 
-    
 
-    <section style="display: flex; flex-direction: row; gap: 60px; justify-content: center; align-items: center;">
+
+
+
+
+
+    <section style="background: #F8F7F4; display: flex; flex-direction: row; gap: 60px; justify-content: center; align-items: center;">
         <img style="width: 550px; height: 410px; border: solid 1px black; border-radius: 45px;">
-        <div style="display: flex; flex-direction: column; gap: 50px; width: 520px;">
-            <p>ARQUITECTURA DE PAZ</p>
+
+        <div style="display: flex; flex-direction: column; gap: 25px; width: 520px;">
+            <p class="title-tag">ARQUITECTURA DE PAZ</p>
             <h1>Espacios diseñados para el silencio absoluto</h1>
-            <p>Nuestras salas de relajacion han sido creadas bajo principios de neuroaquitectura para inducir estados de calma profunda. Cada material, desde la piedra volcanica hasta la madera de roble, ha sido seleccionado por su capacidad de calmar los sentidos.</p>
+            <p class="section-parrafo">Nuestras salas de relajacion han sido creadas bajo principios de neuroaquitectura para inducir estados de calma profunda. Cada material, desde la piedra volcanica hasta la madera de roble, ha sido seleccionado por su capacidad de calmar los sentidos.</p>
             <a class="hero-button" style="color: black; border: solid 1px black;">Ver instalaciones</a>
         </div>
+
     </section>
     <hr>
 
-    <section style="display: flex; flex-direction: row; gap: 60px; justify-content: center; align-items: center;">
-        <div style="display: flex; flex-direction: column; gap: 50px; width: 520px;">
-            <p>COSMETICA DE VANGUARDIA</p>
-            <h1>Ciencia y naturaleza en perfecta armonia</h1>
-            <p>Utilizamos exclusivamente lineas de productos organicos con activos de alta concentracion. Nuestros tratamientos faciales combinan tecnicas manuales de masaje kobido con la tecnología mas avanzada en rejuvenecimiento</p>
+    <section style="background: #F8F7F4; display: flex; flex-direction: row; gap: 60px; justify-content: center; align-items: center;">
+        <div style="display: flex; flex-direction: column; gap: 25px; width: 520px;">
+            <p class="title-tag">COSMÉTICA DE VANGUARDIA</p>
+            <h1>Ciencia y naturaleza en perfecta armonía</h1>
+            <p class="section-parrafo">Utilizamos exclusivamente líneas de productos orgánicos con activos de alta concentración. Nuestros tratamientos faciales combinan técnicas manuales de masaje Kobido con la tecnología más avanzada en rejuvenecimiento celular no invasivo.</p>
             <a class="hero-button" style="color: black; border: solid 1px black;">Nuestra seleccion</a>
         </div>
+
         <img style="width: 550px; height: 410px; border: solid 1px black; border-radius: 45px;">
+
+
     </section>
     <hr>
 
-    <section style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-        <div style="display: flex; flex-direction: column; text-align: center; gap: 10px;">
-            <p>PORQUE NOSOTROS</p>
-            <h1>LA EXCELENCIA EN CADA DETALLA DE TU EXPERIENCIA</h1>
+  
+
+
+
+
+
+
+
+
+    <section style="background: #EBE9E533;  height: 1085px; display: flex; flex-direction: column; gap: 96px; align-items: center; justify-content: center;">
+        <div style="width: 641px; display: flex; flex-direction: column; text-align: center; gap: 16px;">
+            <p class="title-tag">PORQUE NOSOTROS</p>
+            <h1>La excelencia en cada detalle de tu experiencia</h1>
         </div>
 
-        <div style="display: flex; flex-direction: row;">
+        <div style="display: flex; flex-direction: row; gap: 90px;">
+            <div class="razon-card">
+                <img>
+                <p class="razon-card-title">Sostenibilidad</p>
+                <p>Comprometidos con el medio ambiente, utilizamos productos libres de parabenos y envases 100% reciclables.</p>
+            </div>
+            <div class="razon-card">
+                <img>
+                <p class="razon-card-title">Expertos Certificados</h3>
+                <p>Comprometidos con el medio ambiente, utilizamos productos libres de parabenos y envases 100% reciclables.</p>
+            </div>
+            <div class="razon-card">
+                <img>
+                <p class="razon-card-title">Tiempo para Ti</p>
+                <p>Programamos las citas con amplios margenes para asegurar que nunca te sientas apresurado.</p>
+            </div>
+        </div>
+
+
+        <div style="display: flex; flex-direction: row; gap: 90px;">
             <div class="razon-card">
                 <img>
                 <h3>Sostenibilidad</h3>
@@ -361,26 +508,7 @@
             </div>
         </div>
 
-
-        <div style="display: flex; flex-direction: row;">
-            <div class="razon-card">
-                <img>
-                <h3>Sostenibilidad</h3>
-                <p>Comprometidos con el medio ambiente, utilizamos productos libres de parabenos y envases 100% reciclables.</p>
-            </div>
-            <div class="razon-card">
-                <img>
-                <h3>Expertos Certificados</h3>
-                <p>Comprometidos con el medio ambiente, utilizamos productos libres de parabenos y envases 100% reciclables.</p>
-            </div>
-            <div class="razon-card">
-                <img>
-                <h3>Tiempo para Ti</h3>
-                <p>Programamos las citas con amplios margenes para asegurar que nunca te sientas apresurado.</p>
-            </div>
-        </div>
-
-        <a class="hero-button" style="background-color: green;">Elige tu bienestar</a>
+        <a class="green-button">Elige tu bienestar</a>
     </section>
     <hr>
 
@@ -390,23 +518,26 @@
 
 
     <section style="background: #F8F7F4FF; display: flex; flex-direction: column; gap: 30px; align-items: center; justify-content: center;">
-        <h1 style="width: 550px;">Una experiencia dise;ada para ser fluida y revializante</h1>
-        <div style="display: flex; flex-direction: row; gap: 50px;">
+        <div style="width: 550px; display: flex; justify-content: center;">
+            <p class="title-tag">TU CAMINO AL RELAX</p>
+            <h1>Una experiencia diseñada para ser fluida y revializante</h1>
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: center; gap: 50px;">
             <div  class="Paso-card">
                 <img src="" alt="">
-                <p class="paso-card-num">PASO 01</p>
+                <p class="section-parrafo">PASO 01</p>
                 <p class="paso-card-nombre">Consulta Personalizada</p>
                 <p class="paso-card-cont">Comenzamos con una breve entrevista para entender tus necesidades fisicas y emocionales del dia.</p>
             </div>
             <div class="Paso-card">
                 <img src="" alt="">
-                <p class="paso-card-num">PASO 02</p>
+                <p class="section-parrafo">PASO 02</p>
                 <p class="paso-card-nombre">Inmersion Sensorial</p>
                 <p class="paso-card-cont">Tu terapeuta selecciona la musica, aroma e iluminacion ideales antes de iniciar tu tratamiento experto</p>
             </div>
             <div class="Paso-card">
                 <img src="" alt="">
-                <p class="paso-card-num">PASO 03</p>
+                <p class="section-parrafo">PASO 03</p>
                 <p class="paso-card-nombre">Transición Suave</p>
                 <p class="paso-card-cont">Concluye tu visita en nuestra sala de infusion, permitiendo que tu cuerpo integre los beneficios recibidos.</p>
             </div>
