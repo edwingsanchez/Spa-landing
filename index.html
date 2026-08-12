@@ -204,6 +204,10 @@
 
 
 
+
+
+
+
     .razon-card{
         height: auto;
         width: 341px;
@@ -211,8 +215,6 @@
         display: flex; 
         flex-direction: column;
         gap: 16px;
-
-        border: solid 1px black;
 
         font-size: 14px; 
         line-height: 23px; 
@@ -228,15 +230,14 @@
         color: #221F19FF; 
     }
 
-
-
-
     .razon-card img{
         width: 40px;
         height: 40px;
         border-radius: 100%;
-        background-color: beige;
+        background-color: #E8EFE1FF;
     }
+
+
 
 
 
@@ -246,11 +247,18 @@
 
     .paso-card{
         width: 341px;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
     }
 
     .paso-card img{
         width: 341px; 
-        height: 255px;
+        height: 256px;
+        border-radius: 32px;
+        background: pink;
     }
 
 
@@ -517,48 +525,40 @@
 
 
 
-    <section style="background: #F8F7F4FF; display: flex; flex-direction: column; gap: 30px; align-items: center; justify-content: center;">
-        <div style="width: 550px; display: flex; justify-content: center;">
+    <section style="height: 898px; background: #F8F7F4FF; display: flex; flex-direction: column; gap: 64px; align-items: center; justify-content: center;">
+        <div style="width: 753px; display: flex; flex-direction: column; gap: 16px; align-items: center; text-align: center;">
             <p class="title-tag">TU CAMINO AL RELAX</p>
             <h1>Una experiencia diseñada para ser fluida y revializante</h1>
         </div>
-        <div style="display: flex; flex-direction: row; justify-content: center; gap: 50px;">
-            <div  class="Paso-card">
-                <img src="" alt="">
-                <p class="section-parrafo">PASO 01</p>
-                <p class="paso-card-nombre">Consulta Personalizada</p>
-                <p class="paso-card-cont">Comenzamos con una breve entrevista para entender tus necesidades fisicas y emocionales del dia.</p>
+        <div style="display: flex; flex-direction: row; justify-content: center; gap: 48px;">
+            <div  class="paso-card">
+                <img>
+                <div style="display: flex; flex-direction: column; gap: 13px;">
+                    <p class="title-tag">PASO 01</p>
+                    <p class="paso-card-nombre">Consulta Personalizada</p>
+                    <p class="paso-card-cont">Comenzamos con una breve entrevista para entender tus necesidades fisicas y emocionales del dia.</p>
+                </div>
             </div>
-            <div class="Paso-card">
-                <img src="" alt="">
-                <p class="section-parrafo">PASO 02</p>
-                <p class="paso-card-nombre">Inmersion Sensorial</p>
-                <p class="paso-card-cont">Tu terapeuta selecciona la musica, aroma e iluminacion ideales antes de iniciar tu tratamiento experto</p>
-            </div>
-            <div class="Paso-card">
-                <img src="" alt="">
-                <p class="section-parrafo">PASO 03</p>
-                <p class="paso-card-nombre">Transición Suave</p>
-                <p class="paso-card-cont">Concluye tu visita en nuestra sala de infusion, permitiendo que tu cuerpo integre los beneficios recibidos.</p>
+            <div class="paso-card">
+                <img>
+                <div style="display: flex; flex-direction: column; gap: 13px;">
+                    <p class="title-tag">PASO 02</p>
+                    <p class="paso-card-nombre">Inmersion Sensorial</p>
+                    <p class="paso-card-cont">Tu terapeuta selecciona la musica, aroma e iluminacion ideales antes de iniciar tu tratamiento experto</p>
+                </div>
+           </div>
+            <div class="paso-card">
+                <img>
+                <div>
+                    <p class="title-tag">PASO 03</p>
+                    <p class="paso-card-nombre">Transición Suave</p>
+                    <p class="paso-card-cont">Concluye tu visita en nuestra sala de infusion, permitiendo que tu cuerpo integre los beneficios recibidos.</p>
+                </div>
             </div>
         </div>
     </section>
     <hr>
 
-
-
-
-
-
-    <section style="background: #DEDCD61A;">
-        <div>
-            <div style="display: flex; flex-direction: column;">
-                <p>NUESTRO QEUIPO</p>
-            </div>
-            <div style="width: 550px; height: 410px; border: solid 5px black; border-radius: 35px;"><img src="" alt=""></div>
-        </div>
-    </section>
-    <hr>
 
 
 
@@ -613,16 +613,16 @@
 
             <div style="width: 560px; height: 840px; padding: 80px;    display: flex; flex-direction: column; gap: 96px; justify-content: center;">
                 <div style="width: 343px;  display: flex; flex-direction: column; gap: 16px;">
-                    <p>TU OCASION ESPECIAL</p>
+                    <p class="title-tag">TU OCASION ESPECIAL</p>
                     <h1 style="font-size: 48px; line-height: 56px; font-weight: 400;">¿Listo para vivir la experiencia Aura Spa</h1>
                 </div>
                 <div style="width: 448px;   display: flex; flex-direction: column; gap: 32px;">
-                    <p>Unete a nuestra comunidad selecta y comienza a recibir beneficios exclusivos desde primera visita. Tu santuario personal de te espera.</p>
+                    <p class="section-parrafo">Unete a nuestra comunidad selecta y comienza a recibir beneficios exclusivos desde primera visita. Tu santuario personal de te espera.</p>
                     <div style="display: flex; flex-direction: row; gap: 10px;">
-                        <a class="hero-button" style="background-color: green;">Reservar Ahora</a>
-                        <a class="hero-button" style="color: green; border: solid 1px green;">ver Menu de Servicios</a>
+                        <a class="green-button">Reservar Ahora</a>
+                        <a class="hero-button" style="color: #657455FF; border: solid 1px #657455FF;">ver Menu de Servicios</a>
                     </div>
-                    <hr>
+                    <hr style="width: 400px; border: solid 1px #D1CEC880;">
                     <div style="display: flex; flex-direction: row; gap: 26px; align-items: center;">
                         <div>
                             <img style="width: 40px; height: 40px; border-radius: 100%; background: #BDB3A2;">
@@ -630,12 +630,12 @@
                             <img style="width: 40px; height: 40px; border-radius: 100%; background: #BDB3A2;">
                         </div>
 
-                        <p style="width: 225px;"><span style="font-weight: bold;">Mas de 500</span> personas reservaron este mes</p>
+                        <p style="width: 225px; font-size: 12px; line-height: 16px; font-weight: 400; color: #757067FF"><span style="font-weight: bold; color: black;">Mas de 500</span> personas reservaron este mes</p>
                     </div>
                 </div>
             </div>
             
-            <img style="width: 560px; height: 840px; background: #BDB3A2; border-radius: 64px;">
+            <img src="/95d5286d-4322-4fb5-95f3-be097aa7b399.webp" style="width: 560px; height: 840px; background: #BDB3A2; border-radius: 64px;">
 
 
 
