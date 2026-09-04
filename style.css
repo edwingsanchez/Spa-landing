@@ -1,0 +1,312 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Montserrat';
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.section-parrafo{
+    font-family: Montserrat; 
+    font-size: 16px; 
+    line-height: 28px; 
+    font-weight: 400; 
+    color: #757067FF; 
+}
+
+.section-list{
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    color: #221F19FF; 
+}
+
+h1{
+    font-family: 'Cormorant Garamond'; 
+    font-size: 48px; 
+    line-height: 56px; 
+    font-weight: 400; 
+    color: #221F19FF; 
+}
+
+.title-tag{
+    font-size: 14px; 
+    font-weight: 600; 
+    color: #657455FF;
+}
+
+h2, h3{
+    font-family: 'Cormorant Garamond';
+}
+
+.green-button{
+        width: 250px; 
+        height: 56px; 
+        padding: 0 12px; 
+
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+
+        font-family: Montserrat; 
+        font-size: 16px; 
+        line-height: 26px; 
+        font-weight: 500; 
+        color: #F8F7F4FF; 
+        background: #657455FF; 
+        opacity: 1; 
+
+        border-radius: 9999px; 
+        border-width: 0px; 
+        border-color: #000000FF; /* black */
+        border-style: solid; 
+}
+
+
+
+
+
+header{
+    height: 81px; 
+    padding: 21px 104px;
+    background: #F8F7F499; 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Montserrat', sans-serif;
+
+    position: sticky;
+    top: 0%;
+}
+
+#header-button{
+    width: 150px; 
+    height: 40px; 
+    padding: 0 12px; 
+    
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    
+    font-family: Montserrat; 
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 500; 
+    color: #F8F7F4FF; 
+    background: #657455FF; 
+    
+    border-radius: 4px;
+}
+
+.header-logo-text{
+    font-family: Montserrat; 
+    font-size: 24px;
+    font-weight: 600; 
+}
+
+
+
+
+
+
+#hero{
+    background: #8B7855; 
+    
+    display: flex; 
+    align-items: end;
+    padding: 97px 160px;
+}
+
+#hero-container{
+    display: flex; 
+    flex-direction: column; 
+    gap: 63px;
+}
+
+#hero-title{
+    width: 662px; 
+    font-family: 'Cormorant Garamond'; 
+    font-size: 48px; 
+    line-height: 56px; 
+    font-weight: 400; 
+    color: #221F19FF; 
+}
+
+.hero-button{
+    width: 224px; 
+    height: 56px; 
+    padding: 0 12px; 
+
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+
+    font-family: Montserrat; 
+    font-size: 16px;
+    font-weight: 500; 
+    color: #FFFFFFFF; /* white */
+    background: #00000000; /* transparent */
+    opacity: 1; 
+
+    border-radius: 9999px; 
+    border-width: 1px; 
+    border-color: #FFFFFFFF; /* white */
+    border-style: solid; 
+    backdrop-filter: blur(4px); 
+    -webkit-backdrop-filter: blur(4px); 
+}
+
+
+
+
+.rating-card{
+    width: 352px;
+    height: 316px;
+    background: #EBE9E5FF;
+    border-radius: 16px;
+    padding: 35px;
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+
+    line-height: 25px;
+}
+
+.rating-card img{
+    width: 96px;
+}
+
+.rating-card-parrafo{
+    font-size: 16px; 
+    line-height: 28px; 
+    font-weight: 400; 
+    color: #221F19FF;
+    font-style: italic; 
+}
+
+
+
+
+
+
+
+
+
+.razon-card{
+    height: auto;
+    width: 341px;
+
+    display: flex; 
+    flex-direction: column;
+    gap: 16px;
+
+    font-size: 14px; 
+    line-height: 23px; 
+    font-weight: 400;
+    color: #757067FF; 
+}
+
+.razon-card-title{
+    font-family: Cormorant Garamond; 
+    font-size: 20px; 
+    line-height: 28px; 
+    font-weight: 500; 
+    color: #221F19FF; 
+}
+
+.razon-card img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #E8EFE1FF;
+}
+
+
+
+
+
+
+
+
+
+.paso-card{
+    width: 341px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.paso-card-nombre{
+    font-family: 'Cormorant Garamond'; 
+    font-size: 24px; 
+    line-height: 32px; 
+    font-weight: 400; 
+    color: #221F19FF; 
+}
+
+.paso-card-cont{
+    font-family: Montserrat; 
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    color: #757067FF; 
+}
+
+
+
+
+details{
+    border: solid 1px #D1CEC880;
+    border-radius: 16px;
+}
+
+.faq-title{
+    width: 736px;
+    height: 78px;
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-body{
+    width: 736px;
+    height: 78px;
+    padding: 30px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: beige;
+
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+}
+
+
+
+footer{
+    width: 100%; 
+    height: 376px; 
+    background: #DEDCD6FF;
+
+    padding: 48px 96px;
+}

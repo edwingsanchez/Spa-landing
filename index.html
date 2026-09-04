@@ -4,308 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aura SPA</title>
+    <meta name="Author" content="EDWING SANCHEZ">
+    <meta name="Keywords" content="SPA, RELAJANTE, RELAX, RELAJACION, MASAJE, MASAJE, ZEN, MASAJES EN MONTERREY,">
+    <meta name="OG:Title" content="Astra SPA">
+    <meta name="OG:Description" content="El mejor SPA en nuestra area.">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<style>
-    * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-
-        text-decoration: none;
-    }
-
-    body{
-        font-family: 'Montserrat';
-    }
-
-    section {
-        width: 100%;
-        height: 100vh;
-    }
-
-    .section-parrafo{
-        font-family: Montserrat; 
-        font-size: 16px; 
-        line-height: 28px; 
-        font-weight: 400; 
-        color: #757067FF; 
-    }
-
-    .section-list{
-        font-size: 14px; 
-        line-height: 22px; 
-        font-weight: 400; 
-        color: #221F19FF; 
-    }
-
-    h1{
-        font-family: 'Cormorant Garamond'; 
-        font-size: 48px; 
-        line-height: 56px; 
-        font-weight: 400; 
-        color: #221F19FF; 
-    }
-
-    .title-tag{
-        font-size: 14px; 
-        font-weight: 600; 
-        color: #657455FF;
-    }
-
-    h2, h3{
-        font-family: 'Cormorant Garamond';
-    }
-
-    .green-button{
-            width: 250px; 
-            height: 56px; 
-            padding: 0 12px; 
-
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-
-            font-family: Montserrat; 
-            font-size: 16px; 
-            line-height: 26px; 
-            font-weight: 500; 
-            color: #F8F7F4FF; 
-            background: #657455FF; 
-            opacity: 1; 
-
-            border-radius: 9999px; 
-            border-width: 0px; 
-            border-color: #000000FF; /* black */
-            border-style: solid; 
-    }
-
-
-
-
-
-    header{
-        height: 81px; 
-        padding: 21px 104px;
-        background: #F8F7F499; 
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    #header-button{
-        width: 150px; 
-        height: 40px; 
-        padding: 0 12px; 
-        
-        display: flex; 
-        align-items: center; 
-        justify-content: center; 
-        
-        font-family: Montserrat; 
-        font-size: 14px; 
-        line-height: 22px; 
-        font-weight: 500; 
-        color: #F8F7F4FF; 
-        background: #657455FF; 
-        
-        border-radius: 4px;
-    }
-
-    .header-logo-text{
-        font-family: Montserrat; 
-        font-size: 24px;
-        font-weight: 600; 
-    }
-
-
-
-
-
-
-    #hero{
-        background: #8B7855; 
-        
-        display: flex; 
-        align-items: end;
-        padding: 97px 160px;
-    }
-
-    #hero-container{
-        display: flex; 
-        flex-direction: column; 
-        gap: 63px;
-    }
-
-    #hero-title{
-        width: 662px; 
-        font-family: 'Cormorant Garamond'; 
-        font-size: 48px; 
-        line-height: 56px; 
-        font-weight: 400; 
-        color: #221F19FF; 
-    }
-
-    .hero-button{
-        width: 224px; 
-        height: 56px; 
-        padding: 0 12px; 
-
-        display: flex; 
-        align-items: center; 
-        justify-content: center; 
-
-        font-family: Montserrat; 
-        font-size: 16px;
-        font-weight: 500; 
-        color: #FFFFFFFF; /* white */
-        background: #00000000; /* transparent */
-        opacity: 1; 
-
-        border-radius: 9999px; 
-        border-width: 1px; 
-        border-color: #FFFFFFFF; /* white */
-        border-style: solid; 
-        backdrop-filter: blur(4px); 
-        -webkit-backdrop-filter: blur(4px); 
-    }
-
-
-
-
-    .rating-card{
-        width: 352px;
-        height: 316px;
-        background: #EBE9E5FF;
-        border-radius: 16px;
-        padding: 35px;
-
-        display: flex; 
-        flex-direction: column;
-        justify-content: space-between;
-
-        line-height: 25px;
-    }
-
-    .rating-card img{
-        width: 96px;
-    }
-
-    .rating-card-parrafo{
-        font-size: 16px; 
-        line-height: 28px; 
-        font-weight: 400; 
-        color: #221F19FF;
-        font-style: italic; 
-    }
-
-
-
-
-
-
-
-
-
-    .razon-card{
-        height: auto;
-        width: 341px;
-
-        display: flex; 
-        flex-direction: column;
-        gap: 16px;
-
-        font-size: 14px; 
-        line-height: 23px; 
-        font-weight: 400;
-        color: #757067FF; 
-    }
-
-    .razon-card-title{
-        font-family: Cormorant Garamond; 
-        font-size: 20px; 
-        line-height: 28px; 
-        font-weight: 500; 
-        color: #221F19FF; 
-    }
-
-    .razon-card img{
-        width: 40px;
-        height: 40px;
-        border-radius: 100%;
-        background-color: #E8EFE1FF;
-    }
-
-
-
-
-
-
-
-
-
-    .paso-card{
-        width: 341px;
-        height: auto;
-
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-    }
-
-
-    .paso-card-nombre{
-        font-family: 'Cormorant Garamond'; 
-        font-size: 24px; 
-        line-height: 32px; 
-        font-weight: 400; 
-        color: #221F19FF; 
-    }
-
-    .paso-card-cont{
-        font-family: Montserrat; 
-        font-size: 14px; 
-        line-height: 22px; 
-        font-weight: 400; 
-        color: #757067FF; 
-    }
-
-
-
-
-
-    .query{
-        width: 736px;
-        height: 78px;
-        padding: 30px;
-
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        border: solid 1px #D1CEC880;
-        border-radius: 16px;
-    }
-
-
-    footer{
-        width: 100%; 
-        height: 376px; 
-        background: #DEDCD6FF;
-
-        padding: 48px 96px;
-    }
-
-
-
-</style>
 <body>
     <header>
         <div style="display: flex; flex-direction: row; gap: 12px; align-items: center;">
@@ -318,7 +27,7 @@
                 <p style="font-size: 14px; font-weight: 500; color: #757067FF;">+34 900 123 456</p>
             </div>
 
-            <a href="facebook.com"><img src="/images/header-reservarcita.png" alt=""></a>
+            <a href="https://web.whatsapp.com/"><img src="/images/header-reservarcita.png" alt=""></a>
 
         </div>
     </header>
@@ -335,8 +44,8 @@
 
             <div style="display: flex; flex-direction: column; gap: 32px;">
                 <div style="display: flex; flex-direction: row; gap: 23px">
-                    <a class="hero-button" style="background: #657455FF; border-width: 0px">Reservar Experiencia</a>
-                    <a class="hero-button">Explorar Servicios</a>
+                    <a href="https://web.whatsapp.com/" class="hero-button" style="background: #657455FF; border-width: 0px">Reservar Experiencia</a>
+                    <a href="https://web.whatsapp.com/" class="hero-button">Explorar Servicios</a>
                 </div>
                 <p style="font-size: 12px; font-weight: 400; color: #FFFFFFFF;">TRATAMIENTOS ORGANICOS Y SOSTENIBILIDAD CONSCIENTE</p>
             </div>
@@ -396,7 +105,7 @@
         </div>
         
 
-        <a style="width: 180px; 
+        <a href="https://google.com/" style="width: 180px; 
                 height: 40px; 
                 padding: 0 12px; 
                 display: flex; 
@@ -450,7 +159,7 @@
                 </div>
 
             
-                <a class="green-button">Comienza tu viaje hoy</a>
+                <a href="https://web.whatsapp.com/" class="green-button">Comienza tu viaje hoy</a>
             </div>
 
         </div>
@@ -478,7 +187,7 @@
             <p class="title-tag">ARQUITECTURA DE PAZ</p>
             <h1>Espacios diseñados para el silencio absoluto</h1>
             <p class="section-parrafo">Nuestras salas de relajacion han sido creadas bajo principios de neuroaquitectura para inducir estados de calma profunda. Cada material, desde la piedra volcanica hasta la madera de roble, ha sido seleccionado por su capacidad de calmar los sentidos.</p>
-            <a class="hero-button" style="color: black; border: solid 1px black;">Ver instalaciones</a>
+            <a href="https://web.whatsapp.com/" class="hero-button" style="color: black; border: solid 1px black;">Ver instalaciones</a>
         </div>
 
     </section>
@@ -489,7 +198,7 @@
             <p class="title-tag">COSMÉTICA DE VANGUARDIA</p>
             <h1>Ciencia y naturaleza en perfecta armonía</h1>
             <p class="section-parrafo">Utilizamos exclusivamente líneas de productos orgánicos con activos de alta concentración. Nuestros tratamientos faciales combinan técnicas manuales de masaje Kobido con la tecnología más avanzada en rejuvenecimiento celular no invasivo.</p>
-            <a class="hero-button" style="color: black; border: solid 1px black;">Nuestra seleccion</a>
+            <a href="https://web.whatsapp.com/" class="hero-button" style="color: black; border: solid 1px black;">Nuestra seleccion</a>
         </div>
 
         <div style="width: 550px; height: 410px; overflow: hidden; border: solid 1px black; border-radius: 45px; display: flex; align-items: center;">
@@ -552,7 +261,7 @@
             </div>
         </div>
 
-        <a class="green-button">Elige tu bienestar</a>
+        <a href="https://web.whatsapp.com/" class="green-button">Elige tu bienestar</a>
     </section>
     <hr>
 
@@ -617,34 +326,26 @@
         <h1 style="width: 736px; display: flex; justify-content: center; align-items: center; text-align: center;">Todo lo que necesitas saber antes de tu visita</h1>
         
         <div style="display: flex; flex-direction: column; gap: 20px;">
-            
-            <div>
-                <button class="query">
-                    <p>¿Con cuanta antelacion debo reservar?</p>
-                    <p>></p>
-                </button>
-                <div class="query">
-                    <p>Respuesta 1</p>
-                </div>
-            </div>
-
-
-            <div class="query">
-                <p>¿Qué debo llevar para mi tratamiento?</p>
-                <p>></p>
-            </div>
-            <div class="query">
-                <p>¿Tienen opciones para pareja?</p>
-                <p>></p>
-            </div>
-            <div class="query">
-                <p>¿Puedo cancelar o reprogramar mi cita?</p>
-                <p>></p>
-            </div>
-            <div class="query">
-                <p>¿Ofrecen tarjetas de regalo?</p>
-                <p>></p>
-            </div>
+            <details class="faq-item">
+                <summary class="faq-title">¿Con cuanta antelacion debo reservar?</summary>
+                <p class="faq-body">Respuesta #1</p>
+            </details>
+            <details>
+                <summary class="faq-title">¿Qué debo llevar para mi tratamiento?</summary>
+                <p class="faq-body">Respuesta #2</p>
+            </details>
+            <details>
+                <summary class="faq-title">¿Tienen opciones para pareja?</summary>
+                <p class="faq-body">Respuesta #3</p>
+            </details>
+            <details>
+                <summary class="faq-title">¿Puedo cancelar o reprogramar mi cita?</summary>
+                <p class="faq-body">Respuesta #4</p>
+            </details>
+            <details>
+                <summary class="faq-title">¿Ofrecen tarjetas de regalo?</summary>
+                <p class="faq-body">Respuesta #5</p>
+            </details>
         </div>
     </section>
     <hr>
@@ -674,15 +375,21 @@
                 <div style="width: 448px;   display: flex; flex-direction: column; gap: 32px;">
                     <p class="section-parrafo">Unete a nuestra comunidad selecta y comienza a recibir beneficios exclusivos desde primera visita. Tu santuario personal de te espera.</p>
                     <div style="display: flex; flex-direction: row; gap: 10px;">
-                        <a class="green-button">Reservar Ahora</a>
-                        <a class="hero-button" style="color: #657455FF; border: solid 1px #657455FF;">ver Menu de Servicios</a>
+                        <a href="https://web.whatsapp.com/" class="green-button">Reservar Ahora</a>
+                        <a href="https://web.whatsapp.com/" class="hero-button" style="color: #657455FF; border: solid 1px #657455FF;">ver Menu de Servicios</a>
                     </div>
                     <hr style="width: 400px; border: solid 1px #D1CEC880;">
                     <div style="display: flex; flex-direction: row; gap: 26px; align-items: center;">
                         <div>
-                            <img style="width: 40px; height: 40px; border-radius: 100%; background: #BDB3A2;">
-                            <img style="width: 40px; height: 40px; border-radius: 100%; background: #BDB3A2;">
-                            <img style="width: 40px; height: 40px; border-radius: 100%; background: #BDB3A2;">
+                            <a href="https://facebook.com/">
+                                <img style="width: 40px; height: 40px; border-radius: 100%; background: #BDB3A2;">
+                            </a>
+                            <a href="https://facebook.com/">
+                                <img style="width: 40px; height: 40px; border-radius: 100%; background: #BDB3A2;">
+                            </a>
+                            <a href="https://x.com/">
+                                <img style="width: 40px; height: 40px; border-radius: 100%; background: #BDB3A2;">
+                            </a>
                         </div>
 
                         <p style="width: 225px; font-size: 12px; line-height: 16px; font-weight: 400; color: #757067FF"><span style="font-weight: bold; color: black;">Mas de 500</span> personas reservaron este mes</p>
